@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apr1c07|Dropbox直リンクジェネレーター</title>
+  <meta name="keywords" content="dropbox,直リンク,ジェネレーター">
+  <link rel="shortcut icon" type="image/x-icon" href="https://apr1c07.github.io/img/favicon.ico">
+  <!-- BootstrapのCSS読み込み -->
+  <link href="https://apr1c07.github.io/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery読み込み -->
+  <script src="https://apr1c07.github.io/js/jquery-3.4.1.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="https://apr1c07.github.io/js/bootstrap.min.js"></script>
+  <!-- Font Awesomeの読み込み　-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" href="https://apr1c07.github.io/img/favicon.ico">
+  <!-- jsの読み込み　-->
+  <script src="https://apr1c07.github.io/DropboxDirectLink/js/URLConversion.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139886221-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-139886221-1');
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"">
+    <a class=" navbar-brand" href="https://apr1c07.github.io/">
+    <img src="https://apr1c07.github.io/img/Navi_logo.svg" width="30" height="30" class="d-inline-block align-top" alt="ブランド">
+    Apr1c07
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false" aria-label="ナビゲーションの切替">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="Navber">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://apr1c07.github.io/">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://apr1c07.github.io/order_keyboard.html">キーボード制作依頼</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Product
+          </a>
+          <div class="dropdown-menu" active aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://apr1c07.github.io/R6S_Hipfire_Tweak/">R6S: Hipfire Tweak</a>
+            <a class="dropdown-item disabled" href="#">R6S: Sensitivity Optimizer(Unpublished)</a>
+            <a class="dropdown-item" href="https://apr1c07.github.io/Hipfire_ADS.html">R6S: How to have same sensitivity between hipfire and ADS</a>
+            <a class="dropdown-item" href="https://apr1c07.github.io/DropboxDirectLink/">Dropbox直リンクジェネレーター</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="http://spec-gaming.com">Spec Gaming</a>
+          </div>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+  <p style="margin:30px;"></p>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 style="font-size:70px; color:#A7ACB1">ダイレクト追跡リンクジェネレーター</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class=text" style="text-align:left">
+          <p>各配送サービスの追跡番号を貼り付けて変換を押すと、追跡サイトへの直リンクが生成されます。</p>
+          <br>
+          <div class="input-group">
+            <input type="text" class="form-control" 　name="inputNumber" id="inputNumber" value="">
+            <span class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-info active">
+                <input type="radio" name="CoName" id="option1" value="0" autocomplete="off" checked> ヤマト運輸
+              </label>
+              <label class="btn btn-info">
+                <input type="radio" name="CoName" id="option2" value="1" autocomplete="off"> 佐川急便
+              </label>
+              <label class="btn btn-info ">
+                <input type="radio" name="CoName" id="option3" value="2" autocomplete="off"> 日本郵便
+              </label>
+            </span>
+
+            <span class="input-group-btn ml-3">
+              <button class="btn btn-primary" type="button" onclick="URLConversion()"> 変換 </button>
+            </span>
+            <span class="input-group-btn" data-toggle="modal" data-target="#exampleModal">
+              <button class="btn btn-secondary" type="button" onclick="URLCopy()">コピー</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- モーダルの設定 -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">クリップボードにコピーしました。</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</body>
+</html>
