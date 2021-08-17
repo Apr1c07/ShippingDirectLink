@@ -1,6 +1,6 @@
 function URLConversion() {
   var inputNumber = document.getElementById('inputNumber').value;
-  let elements = document.getElementsByName('CoName');
+  var elements = document.getElementsByName('CoName');
   let len = elements.length;
   let checkValue = '';
   for (let i = 0; i < len; i++) {
