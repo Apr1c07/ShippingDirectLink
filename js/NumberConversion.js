@@ -1,4 +1,5 @@
 function URLConversion() {
+  alert('１');
   document.getElementById("inputNumber").value = ""
   var inputNumber = document.getElementById('inputNumber').value;
   var elements = document.getElementsByName('CoName');
