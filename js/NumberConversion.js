@@ -1,5 +1,5 @@
 function URLConversion() {
-  alert('8')
+  alert('9')
   if(document.getElementById("inputNumber").value != "")
   {
     var inputNumber = document.getElementById('inputNumber').value;
@@ -8,6 +8,7 @@ function URLConversion() {
     for (let i = 0; i < elements.length; i++) {
       if (elements[i].checked) {
         checkValue = i;
+        return;
       }
     }
     var Yamato = "https://jizen.kuronekoyamato.co.jp/jizen/servlet/crjz.b.NQ0010?id=";
