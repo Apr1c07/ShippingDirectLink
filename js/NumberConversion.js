@@ -1,5 +1,5 @@
 function URLConversion() {
-  alert('');
+  alert('６');
   if(document.getElementById("inputNumber").value != "")
   {
     var inputNumber = document.getElementById('inputNumber').value;
