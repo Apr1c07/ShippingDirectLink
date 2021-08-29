@@ -1,5 +1,5 @@
 function URLConversion() {
-  alert('２');
+  alert('3');
   if(document.getElementById("inputNumber").value != "")
   {
     document.getElementById("inputNumber").value = ""
@@ -7,9 +7,9 @@ function URLConversion() {
     var elements = document.getElementsByName('CoName');
     let checkValue = '';
     for (let i = 0; i < elements.length; i++) {
-      alert(i+'番目  '+elements[i].checked);
+      alert(i+'番目  '+elements[i].checked+'　'+elements[i].value);
       if (elements[i].checked) {
-        checkValue = elements.item(i).value;
+        checkValue = elements[i].value;
       }
     }
     var Yamato = "https://jizen.kuronekoyamato.co.jp/jizen/servlet/crjz.b.NQ0010?id=";
