@@ -1,10 +1,10 @@
 function URLConversion() {
+  document.getElementById("inputNumber").value = ""
   var inputNumber = document.getElementById('inputNumber').value;
   var elements = document.getElementsByName('CoName');
-  let len = elements.length;
   let checkValue = '';
-  for (let i = 0; i < len; i++) {
-    if (elements.item(i).checked) {
+  for (let i = 0; i < elements.length; i++) {
+    if (elements[i].checked) {
       checkValue = elements.item(i).value;
     }
   }
