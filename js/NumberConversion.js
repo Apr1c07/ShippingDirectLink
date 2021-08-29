@@ -17,13 +17,13 @@ function URLConversion() {
     var a = inputNumber.replace("-", "");
     var b = ""
     alert(checkValue)
-    if (checkValue = "0") {
+    if (checkValue = 0) {
       alert('in 0')
       b = Yamato + a
-    } else if (checkValue = "1") {
+    } else if (checkValue = 1) {
       alert('in 1')
       b = Sagawa + a
-    } else if (checkValue = "2") {
+    } else if (checkValue = 2) {
       alert('in 2')
       b = Yubin + a
     }
