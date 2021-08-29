@@ -7,7 +7,7 @@ function URLConversion() {
     let checkValue = '';
     for (let i = 0; i < elements.length; i++) {
       if (elements[i].checked) {
-        checkValue = elements[i].value;
+        checkValue = i;
       }
     }
     var Yamato = "https://jizen.kuronekoyamato.co.jp/jizen/servlet/crjz.b.NQ0010?id=";
@@ -17,13 +17,13 @@ function URLConversion() {
     var b = ""
     alert('checkValue : '+checkValue)
     if (checkValue = 0) {
-      alert('in 0'+checkValue)
+      alert('in 0 : '+checkValue)
       b = Yamato + a
     } else if (checkValue = 1) {
-      alert('in 1'+checkValue)
+      alert('in 1 : '+checkValue)
       b = Sagawa + a
     } else if (checkValue = 2) {
-      alert('in 2'+checkValue)
+      alert('in 2 : '+checkValue)
       b = Yubin + a
     }
     document.getElementById("inputNumber").value = b;
